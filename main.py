@@ -7,7 +7,7 @@ import time
 from datetime import datetime, timedelta
 TOKEN = "8633492216:AAFBBkueVqtXL0xJgSUlC3RaEKRr8LNjNmA"
 MAIN_ADMIN_ID = 8201674543
-DB_NAME = 'moviequi.db'
+DB_NAME = "/data/moviequi.db"
 bot = telebot.TeleBot(TOKEN)
 def init_db():
     conn = sqlite3.connect(DB_NAME, check_same_thread=False)
