@@ -8,12 +8,6 @@ from datetime import datetime, timedelta
 TOKEN = "8633492216:AAFBBkueVqtXL0xJgSUlC3RaEKRr8LNjNmA"
 MAIN_ADMIN_ID = 8201674543
 DB_NAME = 'moviequi.db'
-# agar sizda moviequi (7).db fayli bo'lsa, undan foydalanamiz
-if os.path.exists('moviequi (7).db'):
-    DB_NAME = 'moviequi (7).db'
-    print("🔁 moviequi (7).db topildi, shu DB ishlatiladi")
-else:
-    print("ℹ️ moviequi (7).db topilmadi, moviequi.db ishlatiladi")
 bot = telebot.TeleBot(TOKEN)
 def init_db():
     conn = sqlite3.connect(DB_NAME, check_same_thread=False)
